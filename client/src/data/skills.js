@@ -1,0 +1,18 @@
+export const skills = [
+  { name: "React.js",      category: "frontend",  proficiency: 92, yearsExperience: 2, order: 1 },
+  { name: "HTML5",         category: "frontend",  proficiency: 95, yearsExperience: 3, order: 2 },
+  { name: "CSS3",          category: "frontend",  proficiency: 92, yearsExperience: 3, order: 3 },
+  { name: "Tailwind CSS",  category: "frontend",  proficiency: 88, yearsExperience: 2, order: 4 },
+  { name: "JavaScript",    category: "language",  proficiency: 90, yearsExperience: 3, order: 5 },
+  { name: "Node.js",       category: "backend",   proficiency: 88, yearsExperience: 2, order: 6 },
+  { name: "Express.js",    category: "backend",   proficiency: 86, yearsExperience: 2, order: 7 },
+  { name: "REST APIs",     category: "backend",   proficiency: 90, yearsExperience: 2, order: 8 },
+  { name: "JWT Auth",      category: "backend",   proficiency: 85, yearsExperience: 2, order: 9 },
+  { name: "MongoDB",       category: "database",  proficiency: 85, yearsExperience: 2, order: 10 },
+  { name: "Mongoose",      category: "database",  proficiency: 84, yearsExperience: 2, order: 11 },
+  { name: "Git & GitHub",  category: "tools",     proficiency: 90, yearsExperience: 3, order: 12 },
+  { name: "Python",        category: "language",  proficiency: 75, yearsExperience: 2, order: 13 },
+  { name: "C++",           category: "language",  proficiency: 70, yearsExperience: 2, order: 14 },
+  { name: "Postman",       category: "tools",     proficiency: 88, yearsExperience: 2, order: 15 },
+  { name: "Vercel/Netlify",category: "tools",     proficiency: 85, yearsExperience: 2, order: 16 },
+];

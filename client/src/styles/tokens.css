@@ -1,0 +1,88 @@
+/* ============================================
+   DESIGN TOKENS — Saksham Nanda Portfolio
+   Palette: deep red / matte black / white
+   ============================================ */
+
+:root {
+  /* --- Color: core palette from brief --- */
+  --color-primary: #e63946;        /* deep red — signature accent */
+  --color-primary-dim: #a31f29;    /* darker red for borders/depth */
+  --color-primary-glow: #ff5a64;   /* lighter red for glow/hover states */
+  --color-white: #ffffff;
+  --color-black: #111111;          /* matte black */
+
+  /* --- Color: derived surfaces for a dark gradient backdrop --- */
+  --color-bg-base: #0a0a0c;
+  --color-bg-elevated: #141417;
+  --color-bg-gradient: radial-gradient(
+      120% 120% at 10% 0%,
+      rgba(230, 57, 70, 0.16) 0%,
+      rgba(10, 10, 12, 0) 45%
+    ),
+    radial-gradient(100% 100% at 90% 100%, rgba(230, 57, 70, 0.1) 0%, rgba(10, 10, 12, 0) 50%),
+    linear-gradient(180deg, #0a0a0c 0%, #111114 100%);
+
+  /* --- Color: text --- */
+  --text-primary: #f5f5f5;
+  --text-secondary: #a3a3a8;
+  --text-muted: #6b6b70;
+
+  /* --- Glassmorphism --- */
+  --glass-bg: rgba(20, 20, 23, 0.55);
+  --glass-border: rgba(255, 255, 255, 0.08);
+  --glass-border-accent: rgba(230, 57, 70, 0.35);
+  --glass-blur: 16px;
+
+  /* --- Typography --- */
+  --font-display: "Clash Display", "Space Grotesk", "Helvetica Neue", sans-serif;
+  --font-body: "Inter", "Helvetica Neue", Arial, sans-serif;
+  --font-mono: "JetBrains Mono", "Fira Code", monospace;
+
+  --fs-xs: 0.75rem;
+  --fs-sm: 0.875rem;
+  --fs-base: 1rem;
+  --fs-lg: 1.25rem;
+  --fs-xl: 1.5rem;
+  --fs-2xl: 2rem;
+  --fs-3xl: 2.75rem;
+  --fs-4xl: 3.75rem;
+  --fs-5xl: 5rem;
+
+  /* --- Spacing scale --- */
+  --space-xs: 0.5rem;
+  --space-sm: 1rem;
+  --space-md: 1.5rem;
+  --space-lg: 2.5rem;
+  --space-xl: 4rem;
+  --space-2xl: 6rem;
+  --space-3xl: 9rem;
+
+  /* --- Radii & shadows --- */
+  --radius-sm: 8px;
+  --radius-md: 16px;
+  --radius-lg: 24px;
+  --radius-full: 999px;
+
+  --shadow-glow-red: 0 0 40px rgba(230, 57, 70, 0.25);
+  --shadow-elevated: 0 20px 60px rgba(0, 0, 0, 0.45);
+
+  /* --- Motion --- */
+  --ease-out-expo: cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-smooth: cubic-bezier(0.65, 0, 0.35, 1);
+  --duration-fast: 0.2s;
+  --duration-base: 0.4s;
+  --duration-slow: 0.8s;
+
+  /* --- Layout --- */
+  --container-max: 1280px;
+  --nav-height: 76px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
