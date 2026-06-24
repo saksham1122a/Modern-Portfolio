@@ -9,8 +9,8 @@ const FOOTER_LINKS = [
 ];
 
 const SOCIALS = [
-  { icon: GithubIcon,   href: "https://github.com/saksham1122a",              label: "GitHub" },
-  { icon: LinkedinIcon, href: "https://www.linkedin.com/in/sakshamnanda01",  label: "LinkedIn" },
+  { icon: GithubIcon, href: "https://github.com/saksham1122a", label: "GitHub" },
+  { icon: LinkedinIcon, href: "https://www.linkedin.com/in/sakshamnanda01", label: "LinkedIn" },
 ];
 
 const Footer = () => {
@@ -30,7 +30,7 @@ const Footer = () => {
         <nav className="footer__links" aria-label="Footer navigation">
           {FOOTER_LINKS.map((link) => (
             <a key={link.id} href={`#${link.id}`}
-               onClick={(e) => { e.preventDefault(); scrollTo(link.id); }}>
+              onClick={(e) => { e.preventDefault(); scrollTo(link.id); }}>
               {link.label}
             </a>
           ))}
@@ -47,7 +47,7 @@ const Footer = () => {
 
       <div className="container footer__bottom">
         <p>
-          © {new Date().getFullYear()} Saksham Nanda · Built with React, Node.js, Express &amp; MongoDB
+          © {new Date().getFullYear()} Saksham Nanda · Modern Portfolio
         </p>
       </div>
     </footer>
